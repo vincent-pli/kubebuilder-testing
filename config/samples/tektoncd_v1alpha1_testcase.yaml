@@ -1,0 +1,7 @@
+apiVersion: tektoncd.tektoncd.hpa-test/v1alpha1
+kind: Testcase
+metadata:
+  name: testcase-sample
+spec:
+  # Add fields here
+  foo: bar

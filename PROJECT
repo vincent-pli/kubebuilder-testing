@@ -1,0 +1,7 @@
+domain: tektoncd.hpa-test
+repo: github.com/vincentpli/kubebuilder-testing
+resources:
+- group: tektoncd
+  kind: Testcase
+  version: v1alpha1
+version: "2"

@@ -1,0 +1,20 @@
+# permissions for end users to view testcases.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: testcase-viewer-role
+rules:
+- apiGroups:
+  - tektoncd.tektoncd.hpa-test
+  resources:
+  - testcases
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - tektoncd.tektoncd.hpa-test
+  resources:
+  - testcases/status
+  verbs:
+  - get
